@@ -27,6 +27,7 @@ From the **modules/ds-components** directory, run `yarn start` in your terminal.
 [Material Web Components] - A set of ready to use rich text editors
 
 [react]: https://reactjs.org/
+[Yarn]: https://yarnpkg.com/en/docs/getting-started
 [create react app]: https://facebook.github.io/create-react-app/
 [stencil]: https://stenciljs.com/
 [material web components]: https://github.com/material-components/material-components-web
