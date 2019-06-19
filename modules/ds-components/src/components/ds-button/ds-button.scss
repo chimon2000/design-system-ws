@@ -1,0 +1,10 @@
+@import '@material/button/mdc-button';
+
+ds-button[disabled] {
+  pointer-events: none;
+}
+
+.mdc-button {
+  font-size: 1rem;
+  font-weight: bold;
+}
