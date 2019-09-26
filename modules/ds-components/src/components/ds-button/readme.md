@@ -23,11 +23,13 @@
 ### Used by
 
  - [ds-playground](../ds-playground)
+ - [my-counter](../my-counter)
 
 ### Graph
 ```mermaid
 graph TD;
   ds-playground --> ds-button
+  my-counter --> ds-button
   style ds-button fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

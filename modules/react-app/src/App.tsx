@@ -1,10 +1,10 @@
-import React from 'react'
-import logo from './logo.svg'
-import './App.css'
-import '@ds/components'
-import Button from './components/Button'
-import Checkbox from './components/Checkbox'
-import { css } from 'emotion'
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import "@ds/components";
+import Button from "./components/Button";
+import Checkbox from "./components/Checkbox";
+import { css } from "emotion";
 
 const App: React.FC = () => {
   return (
@@ -14,14 +14,17 @@ const App: React.FC = () => {
       </header>
       <h1>Welcome to React</h1>
       <div className={spaceClass}>
-        <Button raised onClick={() => console.log('clicked')}>
+        <Button raised onClick={() => console.log("clicked")}>
           Ds Button
         </Button>
       </div>
       <div className={spaceClass}>
-        <ds-button raised onClick={() => console.log('clicked')}>
+        <ds-button raised onClick={() => console.log("clicked")}>
           DS Button
         </ds-button>
+      </div>
+      <div className={spaceClass}>
+        <my-counter></my-counter>
       </div>
 
       <div>
@@ -29,16 +32,17 @@ const App: React.FC = () => {
           className={css`
             display: inline-flex;
             align-items: center;
-          `}>
+          `}
+        >
           <Checkbox /> Check me
         </label>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
 
 const spaceClass = css`
   margin: 5px;
-`
+`;

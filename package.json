@@ -27,6 +27,7 @@
     "test": "yarn workspaces run test"
   },
   "devDependencies": {
+    "prettier": "^1.18.2",
     "rimraf": "^3.0.0"
   }
 }

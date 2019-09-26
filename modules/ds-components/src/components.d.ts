@@ -39,6 +39,7 @@ export namespace Components {
     */
     'middle': string;
   }
+  interface MyCounter {}
 }
 
 declare global {
@@ -67,11 +68,18 @@ declare global {
     prototype: HTMLMyComponentElement;
     new (): HTMLMyComponentElement;
   };
+
+  interface HTMLMyCounterElement extends Components.MyCounter, HTMLStencilElement {}
+  var HTMLMyCounterElement: {
+    prototype: HTMLMyCounterElement;
+    new (): HTMLMyCounterElement;
+  };
   interface HTMLElementTagNameMap {
     'ds-button': HTMLDsButtonElement;
     'ds-checkbox': HTMLDsCheckboxElement;
     'ds-playground': HTMLDsPlaygroundElement;
     'my-component': HTMLMyComponentElement;
+    'my-counter': HTMLMyCounterElement;
   }
 }
 
@@ -106,12 +114,14 @@ declare namespace LocalJSX {
     */
     'middle'?: string;
   }
+  interface MyCounter extends JSXBase.HTMLAttributes<HTMLMyCounterElement> {}
 
   interface IntrinsicElements {
     'ds-button': DsButton;
     'ds-checkbox': DsCheckbox;
     'ds-playground': DsPlayground;
     'my-component': MyComponent;
+    'my-counter': MyCounter;
   }
 }
 
