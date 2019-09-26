@@ -25,5 +25,8 @@
     "build": "yarn workspaces run build",
     "start": "yarn workspaces run start",
     "test": "yarn workspaces run test"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.0"
   }
 }
