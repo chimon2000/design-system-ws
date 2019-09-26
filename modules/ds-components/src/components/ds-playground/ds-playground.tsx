@@ -13,6 +13,7 @@ export class DsPlayground {
   render() {
     return (
       <div>
+        <my-component></my-component>
         <h1>Buttons</h1>
         <p>Material UI buttons</p>
         <h2>Flat</h2>
