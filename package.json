@@ -1,23 +1,29 @@
 {
-    "private": true,
-    "workspaces": {
-        "packages": [
-            "modules/*"
-        ],
-        "nohoist": [
-            "**/react-scripts",
-            "**/react-scripts/**",
-            "**/tsdx",
-            "**/tsdx/**",
-            "**/webpack",
-            "**/webpack/**",
-            "**/@material",
-            "**/@material/**"
-        ]
-    },
-    "scripts": {
-        "build": "yarn workspaces run build",
-        "start": "yarn workspaces run start",
-        "test": "yarn workspaces run test"
-    }
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "modules/*"
+    ],
+    "nohoist": [
+      "**/react-scripts",
+      "**/react-scripts/**",
+      "**/tsdx",
+      "**/tsdx/**",
+      "**/webpack",
+      "**/webpack/**",
+      "**/webpack-dev-server",
+      "**/webpack-dev-server/**",
+      "**/tsdx",
+      "**/tsdx/**",
+      "**/@types",
+      "**/@types/**",
+      "**/@material",
+      "**/@material/**"
+    ]
+  },
+  "scripts": {
+    "build": "yarn workspaces run build",
+    "start": "yarn workspaces run start",
+    "test": "yarn workspaces run test"
+  }
 }
